@@ -69,7 +69,7 @@ background-color: #E08709;
 /* Header */
 .site-header.inicio {
     background-image: url(../img/header.jpg);
-    background-position: center;
+    background-position: center center;
     background-size: cover;
     height: 100vh;
     min-height: 60rem;
@@ -84,13 +84,13 @@ background-color: #E08709;
     color: white;
     padding-bottom: 2rem;
     max-width: 60rem;
-    line-height: 2rem;
+    line-height: 6rem;
 }
 .barra {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 3rem;
+    padding-top: 2rem;
 }
 /** Navegacion **/
 .navegacion a {
@@ -130,11 +130,11 @@ background-color: #E08709;
    background-color: #F5F5F5;
 
 }
-.contnido-anuncio {
+.contenido-anuncio {
     padding: 2rem;
 }
-.contnido-anuncio h3,
-.contnido-anuncio p {
+.contenido-anuncio h3,
+.contenido-anuncio p {
     margin: 0;
 }
 .precio {
@@ -177,14 +177,14 @@ background-color: #E08709;
 }
 
 /** Seccion inferior **/
-.seccion-infeior {
+.seccion-inferior {
     display: flex;
     justify-content: space-between;
 }
-.seccion-infeior .blog {
+.seccion-inferior .blog {
     flex-basis: 60%;
 }
-.seccion-infeior .testimoniales {
+.seccion-inferior .testimoniales {
     flex-basis: calc(40% - 2rem);
 }
 
