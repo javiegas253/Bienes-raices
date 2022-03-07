@@ -46,6 +46,9 @@ h4 {
 .d-block {
     display: block!important;
 }
+.contenido-centrado {
+    max-width: 800px;
+}
 
 /** Botones **/
 .boton {
@@ -110,7 +113,6 @@ background-color: #E08709;
 .navegacion a:last-of-type {
     margin: 0;
 }
-
 /** iconos Nosotros **/
 .icono-nosotros {
     display: flex;
@@ -127,12 +129,14 @@ background-color: #E08709;
 .contenedor-anuncios {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .anuncio {
+    flex-shrink: 0;
    flex-basis: calc(33.3% - 1rem);
    border: 1px solid #b5b5b5;
    background-color: #F5F5F5;
-
+   margin-bottom: 2rem;
 }
 .contenido-anuncio {
     padding: 2rem;
@@ -149,6 +153,9 @@ background-color: #E08709;
     list-style: none;
     padding: 0;
     display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    max-width:500px;
 }
 .iconos-caracteristicas li {
     flex: 1;
@@ -260,13 +267,13 @@ background-color: #E08709;
     display: flex;
     justify-content: space-between;
 }
-
 .copyright {
     margin: 0;
     color: white;
 }
 
 /** INTERNAS **/
+/** Nosotors **/
 .contenido-nosotros {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -277,4 +284,11 @@ background-color: #E08709;
     font-size: 2rem;
     margin: 0;
     padding: 1rem 0 3rem 0;
+}
+
+/** Anuncios **/
+.resumen-propiedad {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
